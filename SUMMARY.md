@@ -17,7 +17,8 @@
 
 * [Defining Methods](methods.md)
 
-## gitBook User
+## Others Tools
 
-* [1. install](1/11.md)
+* [1. gitBook install](1/11.md)
+* [2.gitHub 目录生成器](1/2git.md)
 
