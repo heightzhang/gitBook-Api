@@ -10,6 +10,8 @@
     * [2.1 基础](11-find/21-ji-chu.md)
     * [2.2 数组的常见问题](11-find/22-shu-zu-de-chang-jian-wen-ti.md)
   * [3.字符串](3zi-fu-chuan.md)
+    * [3.1 基础](3zi-fu-chuan/31-ji-chu.md)
+    * [3.2 字符串的常见问题](3zi-fu-chuan/32-zi-fu-chuan-de-chang-jian-wen-ti.md)
 
 ## Methods
 
