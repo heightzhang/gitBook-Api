@@ -3,10 +3,12 @@
 ## Overview
 
 * [My Awesome API](README.md)
-  * [1.数组](1shu-zu.md)
-    * [1.1 find](1shu-zu/11-find.md)
-    * 1.2 filter
-  * [2.对象](11-find.md)
+  * [1.对象](1shu-zu.md)
+    * [1.1 基础](1shu-zu/11-ji-chu.md)
+    * [1.2 对象的常见问题](1shu-zu/12-dui-xiang-de-chang-jian-wen-ti.md)
+  * [2.数组](11-find.md)
+    * [2.1 基础](11-find/21-ji-chu.md)
+    * [2.2 数组的常见问题](11-find/22-shu-zu-de-chang-jian-wen-ti.md)
   * [3.字符串](3zi-fu-chuan.md)
 
 ## Methods

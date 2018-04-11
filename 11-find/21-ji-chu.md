@@ -1,20 +1,19 @@
 
-
 - [1 ES5方法-常用11个](#1-es5方法-常用11个)
-  - [1.1 添加 2](#11-添加-2)
-  - [1.2 删除 2](#12-删除-2)
-  - [1.3 添加/删除的组合 1](#13-添加/删除的组合-1)
-  - [1.4 其它  6](#14-其它--6)
+- [1.1 添加 2](#11-添加-2)
+- [1.2 删除 2](#12-删除-2)
+- [1.3 添加/删除的组合 1](#13-添加/删除的组合-1)
+- [1.4 其它 6](#14-其它--6)
 - [2 ES5-新增方法](#2-es5-新增方法)
-  - [2.1 判断是否为数组](#21-判断是否为数组)
-  - [2.2 数组遍历方法](#22-数组遍历方法)
-    [2.3 归并方法	](#23-归并方法-)
+- [2.1 判断是否为数组](#21-判断是否为数组)
+- [2.2 数组遍历方法](#22-数组遍历方法)
+[2.3 归并方法	](#23-归并方法-)
 - [3 ES6方法](#3-es6方法)
-  - [3.1 小技巧](#31-小技巧)
-  - [3.2 find](#32-find)
-  - [3.3 findIndex](#33-findindex)
-  - [3.4 includes](#34-includes)
-  - [3.5 from](#35-from)
+- [3.1 小技巧](#31-小技巧)
+- [3.2 find](#32-find)
+- [3.3 findIndex](#33-findindex)
+- [3.4 includes](#34-includes)
+- [3.5 from](#35-from)
 
 ## 1 ES5方法-常用11个
 
@@ -26,7 +25,6 @@ push： 往数组**尾部添加**一个或多个元素，返回数组新的长�
 
 注意 push与unshift 返回的是数组的长度；
 
- 
 
 ### 1.2 删除 2
 
@@ -36,7 +34,6 @@ pop：**删除**数组**最后一个**元素，返回删除的元素
 
 注意 Pop与Shift 返回的是被删除的元素；
 
- 
 
 ### 1.3 添加/删除的组合 1
 
@@ -54,17 +51,17 @@ items：插入的元素（可以是多个）
 
 ```js
 for(var j =0;j<goodshistory.length;j++){
-  if (goodshistory[j].guid === currentlist.guid) {
-     goodshistory.splice(j,1);数组中删除当前自己;
-     goodshistory.unshift(currentlist);
-     break;
-  }
+if (goodshistory[j].guid === currentlist.guid) {
+goodshistory.splice(j,1);数组中删除当前自己;
+goodshistory.unshift(currentlist);
+break;
+}
 }
 ```
 
 
 
-### 1.4 其它  6
+### 1.4 其它 6
 
 indexOf 返回某个指定的字符串值在字符串中首次出现的位置,如果要检索的字符串值没有出现，则该方法返回 -1
 
@@ -80,7 +77,7 @@ arr.indexOf('30'); // 元素'30'的索引为2
 
 
 
-join(‘separator’) 返回字符串值，其中包含了连接到一起的数组的所有元素separator为分隔符，默认为逗号  
+join(‘separator’) 返回字符串值，其中包含了连接到一起的数组的所有元素separator为分隔符，默认为逗号
 
 ```js
 // Join('')表示这是数组转换成字符串的常用操作
@@ -90,10 +87,10 @@ var newArr = arr.join(''); // 'ABC123'
 
 
 
-slice(start[,end])：返回数组的片段或子数组，从start开始到end(不包括end所对应的元素) 
+slice(start[,end])：返回数组的片段或子数组，从start开始到end(不包括end所对应的元素)
 
 ```js
-//  复制数组的操作
+// 复制数组的操作
 var arr = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
 var aCopy = arr.slice() // ['A', 'B', 'C', 'D', 'E', 'F', 'G']
 aCopy === arr; // false
@@ -101,7 +98,7 @@ aCopy === arr; // false
 
 
 
-sort：将数组中的元素排序，并返回排序后的数组 从小到大; 
+sort：将数组中的元素排序，并返回排序后的数组 从小到大;
 
 注意默认的排序规则：把所有元素**先转换为String**再排序（再用**ASCII码**进行对比）
 
@@ -119,7 +116,7 @@ reverse：将数组中的元素颠倒顺序，返回逆序后的数组
 
 ```js
 var arr = ['one', 'two', 'three'];
-arr.reverse(); 
+arr.reverse();
 arr; // ['three', 'two', 'one']
 ```
 
@@ -147,13 +144,13 @@ arr.concat(1, 2, [3, 4]); // ['A', 'B', 'C', 1, 2, 3, 4]
 
 ## 2 ES5-新增方法
 
-注意    IE9及IE9以上才支持；
+注意 IE9及IE9以上才支持；
 
 ### 2.1 判断是否为数组
 
 Array.isArray()
 
-当是数组或者对象的时候，typeof  出现的都是object; 为了弥补缺陷，出现了Array.isArray()   
+当是数组或者对象的时候，typeof 出现的都是object; 为了弥补缺陷，出现了Array.isArray()
 
 ```js
 // 是数组返回是true；否则返回是false;
@@ -163,7 +160,7 @@ console.log(Array.isArray(arr)) // true
 
 注意:类数组返回的是false;
 
-当给的值为object的时候,首先typeof ,然后用Array.如果是false, 那么这个就是object; 
+当给的值为object的时候,首先typeof ,然后用Array.如果是false, 那么这个就是object;
 
 
 
@@ -177,7 +174,7 @@ console.log(Array.isArray(arr)) // true
 
 
 
-2.map(fn)  
+2.map(fn)
 
 返回一个新数组
 
@@ -205,7 +202,6 @@ console.log(filterArr) // [6, 7, 8]
 5.some(fn)
 如果该函数对任何一项返回 true，则返回true
 
- 
 
 以上方法都对数组中的每一项运行给定函数fn,，函数中都有三个形参分别为
 \- item：数组中的每一项,
@@ -220,13 +216,13 @@ console.log(filterArr) // [6, 7, 8]
 
 这两个方法都会迭代数组中的所有项，然后生成一个最终返回值。
 
- reduce(fn,initVal)
+reduce(fn,initVal)
 
 reduceRight(fn,initVal)
 
 fn(prev,cur,index,array):
 
- fn是每一项调用的函数，函数接受4个参数分别是
+fn是每一项调用的函数，函数接受4个参数分别是
 
 prev：上一次返回值，
 
@@ -245,9 +241,9 @@ initVal: 迭代初始值（可选），如果缺省，prev的值为数组第一�
 ```js
 var arr = [1, 2, 3, 4, 5]
 var res = arr.reduce(function(prev, cur, index, array) {
-  return prev + cur
+return prev + cur
 })
-console.log('数组求和', res)  // 15 
+console.log('数组求和', res) // 15
 ```
 
 
@@ -316,21 +312,21 @@ Array.from('守候')//["守", "候"]
 //常见的使用方式还有-将Dom集合和arguments转成真正的数组
 let oLi = document.querySelectorAll('li');
 Array.from(oLi ).forEach(function (item) {
-  console.log(item);
+console.log(item);
 });
 
 // arguments对象
 function fn() {
-  let args = Array.from(arguments);
+let args = Array.from(arguments);
 }
 //顺便说下Set
 let newSet = new Set(['a', 'b','a','c'])
-Array.from(newSet) // ['a', 'b','c'] 
+Array.from(newSet) // ['a', 'b','c']
 //ES6 新增的数据结构--Set。它类似于数组，但是成员的值都是唯一的，不重复的。
-//相信大家很容易想到怎么用了，比如数组去重，用Set实现就简单多了。   
+//相信大家很容易想到怎么用了，比如数组去重，用Set实现就简单多了。
 removeRepeatArray(arr) {
-    //return [Array.from(arr)]
-    return [...new Set(arr)]
+//return [Array.from(arr)]
+return [...new Set(arr)]
 }
 ```
 
