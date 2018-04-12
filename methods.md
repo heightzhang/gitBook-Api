@@ -1,30 +1,39 @@
-# Defining Methods
-
-Methods allow you to smoothly display code examples in different languages.
+# Array
 
 {% method %}
-## My first method
+## find
 
-My first method exposes how to print a message in JavaScript and Go.
+find方法，用于找出第一个符合条件的数组成员。如果没找到符合条件的成员就返回underfind
 
 {% sample lang="js" %}
-Here is how to print a message to `stdout` using JavaScript.
+找出第一个大于2的成员
 
 ```js
-console.log('My first method');
+[1, 2, 3, 4].find(n => n > 2) // 3
 ```
 
-{% sample lang="go" %}
-Here is how to print a message to `stdout` using Go.
+## findIndex
 
-```go
-fmt.Println("My first method")
+findIndex方法，用于找出第一个符合条件的数组成员的索引。
+
+{% sample lang="js" %}
+第一个大于2的成员的索引
+
+```js
+[1, 2, 3, 4].findIndex(n => n > 2)// 2
 ```
 
-{% common %}
-Whatever language you are using, the result will be the same.
+## includes
 
-```bash
-$ My first method
+includes方法，用于某个数组是否包含给定的值，返回一个布尔值。如果没找到符合条件的成员就返回underfind
+
+{% sample lang="js" %}
+
+```js
+[1, 2, 3].includes(2) // true
+[1, 2, 3].includes(5) // false
+[1, 2, NaN].includes (NaN)// true
 ```
-{% endmethod %}
+
+
+
