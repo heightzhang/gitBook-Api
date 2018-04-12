@@ -15,7 +15,7 @@
 
 ## Methods
 
-* [Defining Methods](methods.md)
+* [Array](methods.md)
 
 ## Others Tools
 
