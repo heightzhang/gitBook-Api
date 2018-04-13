@@ -15,8 +15,6 @@
 
 ## Methods
 
-* [Array](methods.md)
-
 ## Others Tools
 
 * [1. gitBook install](1/11.md)
