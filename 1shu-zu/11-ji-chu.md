@@ -1,6 +1,6 @@
 
 - [1 In ](#1-in)
-- [ 2 For in ](#2-Forin)
+- [2 For in](#2-Forin)
 - [3 常用方法](#3-常用方法)
 - [3.1 判断对象：是否拥有某一个属性](#31-判断对象：是否拥有某一个属性)
 - [3.2 遍历对象 ](#32-遍历对象)
@@ -38,7 +38,7 @@ xiaoming.hasOwnProperty('name'); // true
 xiaoming.hasOwnProperty('toString'); // false
 ```
 
-#2For in
+#2 For in
 
 ```js
 for (var prop in obj ) {
