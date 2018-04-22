@@ -1,12 +1,13 @@
 
-- [1 In ](#1-in)
-- [2 For in](#2-Forin)
-- [3 常用方法](#3-常用方法)
-- [3.1 判断对象：是否拥有某一个属性](#31-判断对象：是否拥有某一个属性)
-- [3.2 遍历对象 ](#32-遍历对象)
-- [3.3 其它](#33-其它)
+- [1 in ](#1-in)
+- [2 for in](#2-forin)
+- [3 tostring](#3-tostring)
+- [4 deleted](#3-deleted)
 
-#1 In
+
+
+
+#1 in
 
 如果我们要检测`xiaoming`是否拥有某一属性，可以用`in`操作符
 
@@ -38,7 +39,7 @@ xiaoming.hasOwnProperty('name'); // true
 xiaoming.hasOwnProperty('toString'); // false
 ```
 
-#2 For in
+#2 for in
 
 ```js
 for (var prop in obj ) {
@@ -51,7 +52,7 @@ console.log(obj[attr])
 
 
 
-### 3.3 其它
+# 3 tostring
 
 tostring() 将对象转成字符串或者布尔值转成字符串
 
@@ -60,6 +61,6 @@ var boo = new Boolean(true)
 console.log(boo.toString()) // 'true'
 ```
 
-
+# 4 deleted
 
 deleted 删除对象的某个属性
