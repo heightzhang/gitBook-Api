@@ -1,19 +1,17 @@
+# 基础
 
-- [1 in ](#1-in)
-- [2 for in](#2-forin)
-- [3 tostring](#3-tostring)
-- [4 deleted](#3-deleted)
+- [1 in](#1-in)
+- [2 for in](#2-for-in)
+- [3 toString](#3-tostring)
+- [4 deleted ](#4-deleted-)
 
-
-
-
-#1 in
+## 1 in
 
 如果我们要检测`xiaoming`是否拥有某一属性，可以用`in`操作符
 
 继承原型链
 
-```js
+```JS
 var xiaoming = {
 name: '小明',
 birth: 1990,
@@ -31,7 +29,7 @@ score: null
 
 非继承原型链(来自对象自身)
 
-```js
+```
 var xiaoming = {
 name: '小明'
 };
@@ -39,9 +37,9 @@ xiaoming.hasOwnProperty('name'); // true
 xiaoming.hasOwnProperty('toString'); // false
 ```
 
-#2 for in
+## 2 for in
 
-```js
+```JS
 for (var prop in obj ) {
 // 这里打印的prop为每一个属性名
 console.log(prop);
@@ -50,17 +48,15 @@ console.log(obj[attr])
 }
 ```
 
+## 3 toString
 
+ 将对象转成字符串或者布尔值转成字符串
 
-# 3 tostring
-
-tostring() 将对象转成字符串或者布尔值转成字符串
-
-```js
+```JS
 var boo = new Boolean(true)
 console.log(boo.toString()) // 'true'
 ```
 
-# 4 deleted
+## 4 deleted
 
-deleted 删除对象的某个属性
+删除对象的某个属性
