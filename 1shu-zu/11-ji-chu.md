@@ -1,9 +1,7 @@
-# 基础
-
 - [1 in](#1-in)
 - [2 for in](#2-for-in)
 - [3 toString](#3-tostring)
-- [4 deleted ](#4-deleted-)
+- [4 deleted ](#4-deleted)
 
 ## 1 in
 
